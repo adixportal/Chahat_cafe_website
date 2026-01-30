@@ -1,12 +1,9 @@
-// Smooth fade-in effect
-const sections = document.querySelectorAll("section");
-
+const sections=document.querySelectorAll("section");
 window.addEventListener("scroll",()=>{
-  sections.forEach(sec=>{
-    const top = sec.getBoundingClientRect().top;
-    if(top < window.innerHeight - 100){
-      sec.style.opacity = 1;
-      sec.style.transform = "translateY(0)";
-    }
-  });
+sections.forEach(sec=>{
+if(sec.getBoundingClientRect().top < window.innerHeight-100){
+sec.style.opacity=1;
+sec.style.transform="translateY(0)";
+}
+});
 });
