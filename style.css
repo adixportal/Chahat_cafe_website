@@ -6,7 +6,7 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#0c0b0a;
+background:#0b0a09;
 color:#f5f1ec;
 }
 
@@ -15,8 +15,8 @@ height:100vh;
 background:url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4") center/cover;
 position:relative;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 }
 
@@ -38,33 +38,19 @@ font-size:3rem;
 color:#d4af37;
 }
 
-.hero p{
-margin:15px 0;
-letter-spacing:1px;
-}
-
 .hero-buttons a{
-padding:12px 25px;
+padding:12px 28px;
 margin:10px;
 border-radius:30px;
 border:1px solid #d4af37;
 color:#d4af37;
 text-decoration:none;
-transition:0.4s;
+transition:.4s;
 }
 
 .hero-buttons a:hover{
 background:#d4af37;
 color:#000;
-}
-
-.scroll-indicator{
-position:absolute;
-bottom:25px;
-width:20px;
-height:35px;
-border:2px solid #fff;
-border-radius:15px;
 }
 
 .trust{
@@ -74,13 +60,13 @@ justify-content:center;
 }
 
 .trust-card{
-border:1px solid #d4af37;
-padding:20px 40px;
+padding:25px 50px;
 border-radius:20px;
-box-shadow:0 0 25px #d4af3755;
+border:1px solid #d4af37;
+box-shadow:0 0 30px #d4af3760;
 }
 
-.menu,.gallery,.about,.testimonials,.contact{
+section{
 padding:80px 10%;
 text-align:center;
 }
@@ -93,21 +79,33 @@ margin-bottom:40px;
 
 .menu-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:25px;
 }
 
 .menu-card{
-padding:40px;
-border-radius:20px;
 background:rgba(255,255,255,0.05);
-backdrop-filter:blur(8px);
-transition:0.4s;
+padding:20px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+transition:.4s;
 }
 
-.menu-card:hover{
-transform:scale(1.08);
-box-shadow:0 0 30px #d4af3770;
+.menu-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:15px;
+transition:.4s;
+}
+
+.menu-card:hover img{
+transform:scale(1.12);
+}
+
+.menu-card span{
+color:#d4af37;
+font-weight:500;
 }
 
 .gallery-grid{
@@ -116,14 +114,21 @@ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
 
-.gallery-item{
-height:220px;
-background:#222;
+.gallery-grid img{
+width:100%;
+height:250px;
+object-fit:cover;
 border-radius:20px;
+transition:.4s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.08);
+box-shadow:0 0 30px #d4af3770;
 }
 
 .testimonial-card{
-max-width:500px;
+max-width:450px;
 margin:auto;
 padding:30px;
 border-radius:20px;
@@ -133,27 +138,26 @@ background:rgba(255,255,255,0.05);
 .contact iframe{
 width:100%;
 height:300px;
-border-radius:20px;
-margin:20px 0;
 border:0;
+border-radius:20px;
+margin-top:20px;
 }
 
 footer{
 padding:30px;
 border-top:1px solid #333;
-text-align:center;
 }
 
 .socials a{
-margin:0 10px;
 color:#d4af37;
+margin:0 10px;
 text-decoration:none;
 }
 
 .float{
 position:fixed;
-right:15px;
-padding:12px 20px;
+right:20px;
+padding:12px 22px;
 border-radius:30px;
 color:#fff;
 text-decoration:none;
